@@ -40,12 +40,11 @@ public class MainActivity extends BaseActivity {
     private MianActivityBinding mBinding;
 
     private FragmentManager mFragmentManager;
-    private HomeFragment mHomeFragment;
     private FeedFragment mFeedFragment;
     private MessageFragment mMessageFragment;
     private MineFragment mMineFragment;
 
-    private Integer currentIndex = 0;
+    private Integer currentIndex = 1;
 
     private String mExit = "MM";
     private long mExitTime = 0;
@@ -72,19 +71,13 @@ public class MainActivity extends BaseActivity {
 
         initBottomNavigation();
 
-        initBadge();
-
         if (isCheckUpdate()) {
             checkNewVersion();
         }
     }
 
     private void initNavigation() {
-        switchNavigation(mBinding.includeNav.ivHome);
-        mBinding.includeNav.rlHome.setOnClickListener(v -> {
-            currentIndex = 0;
-            switchPage();
-        });
+        switchNavigation(mBinding.includeNav.ivFeed);
         mBinding.includeNav.rlFeed.setOnClickListener(v -> {
             currentIndex = 1;
             switchPage();
@@ -101,10 +94,6 @@ public class MainActivity extends BaseActivity {
 
     private void switchPage() {
         switch (currentIndex) {
-            case 0:
-                switchNavigation(mBinding.includeNav.ivHome);
-                switchFragment(mHomeFragment);
-                break;
             case 1:
                 switchNavigation(mBinding.includeNav.ivFeed);
                 switchFragment(mFeedFragment);
@@ -132,7 +121,6 @@ public class MainActivity extends BaseActivity {
 
     private void initFragment() {
         mFragmentManager = getSupportFragmentManager();
-        mHomeFragment = HomeFragment.newInstance("home");
         mFeedFragment = FeedFragment.newInstance("home");
         mMessageFragment = new MessageFragment();
         mMineFragment = new MineFragment();
@@ -143,9 +131,6 @@ public class MainActivity extends BaseActivity {
     private void initBottomNavigation() {
         mBinding.bottomNavigation.setOnNavigationItemSelectedListener(item -> {
             switch (item.getItemId()) {
-                case R.id.navigation_home:
-                    switchFragment(mHomeFragment);
-                    return true;
                 case R.id.navigation_camera:
                     switchFragment(mFeedFragment);
                     return true;

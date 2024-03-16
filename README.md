@@ -1,8 +1,10 @@
 此工程克隆自 <https://github.com/happycao/lingxi-android>
 
 TODO:
-1. 删除 HomeFragment.java 修改 MainActivity.java 中相关内容
+1.1 (finish) 删除 HomeFragment.java，修改 MainActivity.java 中相关内容
+1.2 删除 MineFragment.java 中的“设置”条目（此条目中的内容只和被删除的 HomeFragment.java 有关）
 2. 修改用户头像 img_user 路径：\huazi-main\app\src\main\res\drawable\img_user.png
+3. 修复后端，使得“我的回复”与“与我相关”可以使用
 
 LOG:
 1. HomeFragment.java 268 274 280 行，为设置该界面图片和文本的地方，此条记录留作之后不能成功删除此文件备用
