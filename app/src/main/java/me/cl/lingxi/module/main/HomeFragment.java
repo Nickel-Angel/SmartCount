@@ -264,17 +264,20 @@ public class HomeFragment extends BaseFragment {
             String text = hitokoto.getHitokoto();
             if (!TextUtils.isEmpty(text)) {
                 mBinding.wordInfo.setVisibility(View.VISIBLE);
-                mBinding.wordInfo.setText(text);
+//              mBinding.wordInfo.setText(text);
+                mBinding.wordInfo.setText("ko no mu mu da");
             }
             String author = hitokoto.getCreator();
             if (!TextUtils.isEmpty(author)) {
                 mBinding.wordAuthor.setVisibility(View.VISIBLE);
-                mBinding.wordAuthor.setText(author);
+//              mBinding.wordAuthor.setText(author);
+                mBinding.wordAuthor.setText("暮暮妈妈");
             }
             String source = hitokoto.getFrom();
             if (!TextUtils.isEmpty(source)) {
                 mBinding.wordSource.setVisibility(View.VISIBLE);
-                mBinding.wordSource.setText(source);
+//              mBinding.wordSource.setText(source);
+                mBinding.wordSource.setText("阿巴阿巴");
             }
             SPUtil.build().putString(HiToKoTo.class.getName(), GsonUtil.toJson(hitokoto));
         }
@@ -286,6 +289,7 @@ public class HomeFragment extends BaseFragment {
             if (img.startsWith("//")) {
                 img = "http:" + img;
             }
+            img = "https://huamurui.github.io/biubiubiu.jpg";
             if (TextUtils.isEmpty(img)) {
                 mBinding.randomImage.setEnabled(false);
             } else {

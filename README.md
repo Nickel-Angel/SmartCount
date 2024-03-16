@@ -1,5 +1,12 @@
 此工程克隆自 <https://github.com/happycao/lingxi-android>
 
+TODO:
+1. 删除 HomeFragment.java 修改 MainActivity.java 中相关内容
+2. 修改用户头像 img_user 路径：\huazi-main\app\src\main\res\drawable\img_user.png
+
+LOG:
+1. HomeFragment.java 268 274 280 行，为设置该界面图片和文本的地方，此条记录留作之后不能成功删除此文件备用
+
 ---
 
 ## 关于灵悉  

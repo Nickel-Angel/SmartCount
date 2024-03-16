@@ -66,7 +66,7 @@ public class AboutActivity extends BaseActivity implements View.OnClickListener 
                 getAppVersion();
                 break;
             case R.id.feedback:
-                boolean isWpa = Utils.wpaQQ(this, "986417980");
+                boolean isWpa = Utils.wpaQQ(this, "4864705");
                 if (!isWpa) {
                     showToast("未安装手Q或安装的版本不支持");
                 }

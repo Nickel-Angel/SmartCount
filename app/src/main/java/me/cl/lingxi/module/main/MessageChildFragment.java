@@ -89,12 +89,8 @@ public class MessageChildFragment extends BaseFragment implements View.OnClickLi
                 break;
             case R.id.send:
                 if (flag) {
-                    boolean isWpa = Utils.wpaQQ(requireActivity(), "986417980");
-                    if (!isWpa) {
-//                        showToast("未安装手Q或安装的版本不支持");
-                        Intent intent = new Intent(getActivity(), Main1Activity.class);
-                        startActivity(intent);
-                    }
+                    Intent intent = new Intent(getActivity(), Main1Activity.class);
+                    startActivity(intent);
                 } else {
                     gotoFuture();
                 }
