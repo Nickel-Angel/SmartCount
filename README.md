@@ -3,7 +3,7 @@
 TODO:
 1. 删除 HomeFragment.java 修改 MainActivity.java 中相关内容
 2. 修改用户头像 img_user 路径：\huazi-main\app\src\main\res\drawable\img_user.png
-3. 修复后端，使得“我的回复”与“与我相关”可以使用
+(finish) 3. 修复后端，使得“我的回复”与“与我相关”可以使用
 4. 启动页面加载动画需要修改 splash_activity.xml 以及相关的图片
 
 LOG:
