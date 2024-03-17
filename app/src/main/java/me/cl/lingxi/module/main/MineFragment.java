@@ -34,7 +34,6 @@ import me.cl.lingxi.module.member.LoginActivity;
 import me.cl.lingxi.module.mine.PersonalInfoActivity;
 import me.cl.lingxi.module.mine.RelevantActivity;
 import me.cl.lingxi.module.setting.AboutActivity;
-import me.cl.lingxi.module.setting.SettingsActivity;
 import okhttp3.Call;
 
 /**
@@ -64,7 +63,6 @@ public class MineFragment extends BaseFragment implements View.OnClickListener {
         mBinding.userBody.setOnClickListener(this);
         mBinding.actionReply.setOnClickListener(this);
         mBinding.actionRelevant.setOnClickListener(this);
-        mBinding.actionSetting.setOnClickListener(this);
         mBinding.actionAbout.setOnClickListener(this);
         mBinding.actionSignOut.setOnClickListener(this);
 
@@ -159,9 +157,6 @@ public class MineFragment extends BaseFragment implements View.OnClickListener {
             case R.id.action_relevant:
                 gotoRelevant(Constants.REPLY_RELEVANT);
                 break;
-            case R.id.action_setting:
-                gotoSettings();
-                break;
             case R.id.action_about:
                 gotoAbout();
                 break;
@@ -216,11 +211,6 @@ public class MineFragment extends BaseFragment implements View.OnClickListener {
     private void gotoAbout() {
         Intent goAbout = new Intent(getActivity(), AboutActivity.class);
         startActivity(goAbout);
-    }
-
-    private void gotoSettings() {
-        Intent goSettings = new Intent(getActivity(), SettingsActivity.class);
-        startActivity(goSettings);
     }
 
     // 前往与我相关

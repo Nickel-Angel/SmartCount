@@ -85,16 +85,6 @@
                 android:text="@string/title_bar_relevant"/>
 
             <TextView
-                android:id="@+id/action_setting"
-                android:layout_width="match_parent"
-                android:layout_height="50dp"
-                android:layout_marginTop="6dp"
-                style="@style/AppTheme.MoreEntry"
-                android:drawableStart="@drawable/ic_setup"
-                android:drawableEnd="@drawable/ic_more"
-                android:text="@string/action_settings"/>
-
-            <TextView
                 android:id="@+id/action_about"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"

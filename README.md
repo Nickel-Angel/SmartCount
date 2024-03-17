@@ -1,9 +1,10 @@
 此工程克隆自 <https://github.com/happycao/lingxi-android>
 
 TODO:
-1. 删除 HomeFragment.java 修改 MainActivity.java 中相关内容
+1.1 (finish) 删除 HomeFragment.java，修改 MainActivity.java 中相关内容
+1.2 (finish) 删除 MineFragment.java 中的“设置”条目（此条目中的内容只和被删除的 HomeFragment.java 有关）
 2. 修改用户头像 img_user 路径：\huazi-main\app\src\main\res\drawable\img_user.png
-(finish) 3. 修复后端，使得“我的回复”与“与我相关”可以使用
+3. (finish) 修复后端，使得“我的回复”与“与我相关”可以使用
 4. 启动页面加载动画需要修改 splash_activity.xml 以及相关的图片
 
 LOG:

@@ -95,8 +95,6 @@
             android:launchMode="singleTop"
             android:theme="@style/AppTheme.Fullscreen" />
         <activity
-            android:name=".module.setting.SettingsActivity" />
-        <activity
             android:name=".module.feed.TopicEitActivity" />
 
         <!-- PhotoPicker start -->
