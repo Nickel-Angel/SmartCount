@@ -126,5 +126,18 @@ public class Main1Activity extends Activity implements Camera.PreviewCallback, A
         Camera.Size size = camera.getParameters().getPreviewSize();
         mAlgUtil.addDataToQueue(data, size.width, size.height);
     }
-    
+
+    @Override
+    public boolean onKeyDown(int keyCode, android.view.KeyEvent event) {
+        if (keyCode == android.view.KeyEvent.KEYCODE_BACK) {
+            Log.i("zhengxing", "MainActivity::onKeyDown KEYCODE_BACK");
+            if (mCameraUtil.getCameraState() >= 0){
+                mCameraUtil.closeCamera();
+                Log.i("zhengxing", "MainActivity::onKeyDown the camera is open, close it");
+            }
+            finish();
+        }
+        return super.onKeyDown(keyCode, event);
+
+    }
 }

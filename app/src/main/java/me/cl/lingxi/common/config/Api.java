@@ -12,7 +12,7 @@ public class Api {
      * token
      */
     public static final String X_APP_TOKEN = "X-App-Token";
-    private static final String serverHost = "192.168.2.218:8090";
+    private static final String serverHost = "172.20.10.2:8090";
 
     /**
      * 收束gradle的flavor控制，将url变量在此接管
